@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="174dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/select_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_avatar"
+            android:layout_width="84dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="My Avatar"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image" />
+
+        <EditText
+            android:id="@+id/et_fname"
+            android:layout_width="344dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_avatar" />
+
+        <EditText
+            android:id="@+id/et_lname"
+            android:layout_width="344dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_fname" />
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="344dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:hint="Student ID"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_lname" />
+
+        <TextView
+            android:id="@+id/tv_dept"
+            android:layout_width="89dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Department:"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_id" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dept">
+
+            <RadioButton
+                android:id="@+id/rb_cs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CS" />
+
+            <RadioButton
+                android:id="@+id/rb_sis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SIS" />
+
+            <RadioButton
+                android:id="@+id/rb_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:text="BIO"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <RadioButton
+                android:id="@+id/rb_Other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Other" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:text="Save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
