@@ -5,3 +5,6 @@ Built an Android Application using a single Main Activity and multiple fragments
 The application enables a new student to enter and edit their information, and save it using shared preferences making use of three fragments namely: My Profile (main screen), Select Avatar, and Display My Profile.
 
 When the app starts, check if there is any profile already saved in SharedPreferences. If there is already a profile saved in the SharedPreferences, load the saved profile and Display My Profile Screen. Else, load My Profile Screen.
+
+
+<a href="https://imgflip.com/gif/3f3myn"><img src="https://i.imgflip.com/3f3myn.gif" title="made at imgflip.com"/></a>
